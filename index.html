@@ -3,99 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Eletrônicos</title>
+    <title>Loja de Camisas</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        /* Estilo do header e footer */
+        body {
+            background-color: #f8f9fa; /* Cor de fundo clara */
+        }
+        .navbar {
+            margin-left: 30px;
+        }
+        footer {
+            background-color: #f8fbfd02; /* Cor cinza escuro do footer */
+            color: rgb(0, 0, 0);
+        }
+        /* Estilo dos cards com efeito hover */
+        .card {
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        /* Estilo para as imagens dos cards */
+        .card-img-top {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
-    <!-- inicio do menu -->
+
+    <!-- Menu -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Loja</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <a class="navbar-brand" href="#">Loja</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Produtos</a>
+                        <a class="nav-link" href="#sudeste">Sudeste</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>                    
+                        <a class="nav-link" href="#nordeste">Nordeste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sul">Sul</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#centro-oeste">Centro-Oeste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#norte">Norte</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- fim do menu -->
 
-     <header class="container mt-5">
-        <h1 class="text-center">Loja de camisas</h1>
-     </header>
-     <main class="container mt-5">
-        <section>
-            <h2 class="text-center">Produtos</h2>
+    <header class="container mt-5">
+        <h1 class="text-center">Loja de Camisas</h1>
+    </header>
+
+    <main class="container mt-5">
+        <!-- Região Sudeste -->
+        <section id="sudeste" class="mt-5">
+            <h2 class="text-center">Camisas do Sudeste</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="img/Flamengo01.png" class="card-img-top" width="354px" height=auto>
+                        <img src="img/Flamengo01.png" class="card-img-top" alt="Flamengo">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Flamengo</h5>
+                            <p class="card-text">Camisa do Flamengo.</p>
+                            <p class="card-price">Preço: R$ 148,90</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="img/Palmeiras01.jpg" class="card-img-top" width="354px" height=auto>
+                        <img src="img/Palmeiras01.jpg" class="card-img-top" alt="Palmeiras">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Palmeiras</h5>
+                            <p class="card-text">Camisa do Palmeiras.</p>
+                            <p class="card-price">Preço: R$ 142,90</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="img/Corinthias01.png" class="card-img-top" width="354px" height="auto">
+                        <img src="img/Corinthians01.png" class="card-img-top" alt="Corinthians">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Corinthians</h5>
+                            <p class="card-text">Camisa do Corinthians.</p>
+                            <p class="card-price">Preço: R$ 145,90</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/SãoPaulo01.png" class="card-img-top" alt="SãoPaulo01">
+                        <div class="card-body">
+                            <h5 class="card-title">São Paulo</h5>
+                            <p class="card-text">Camisa do São Paulo.</p>
+                            <p class="card-price">Preço: R$ 155,90</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <h2 class="text-center mt-5">Contato</h2>
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+
+        <!-- Região Nordeste -->
+        <section id="nordeste" class="mt-5">
+            <h2 class="text-center">Camisas do Nordeste</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Sport01.png" class="card-img-top" alt="Sport">
+                        <div class="card-body">
+                            <h5 class="card-title">Sport</h5>
+                            <p class="card-text">Camisa do Sport.</p>
+                            <p class="card-price">Preço: R$ 130,90</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Fluminense01.png" class="card-img-top" alt="Fluminense">
+                        <div class="card-body">
+                            <h5 class="card-title">Fluminense</h5>
+                            <p class="card-text">Camisa do Fluminense.</p>
+                            <p class="card-price">Preço: R$ 148,90</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
         </section>
-     </main>
-     <footer class="container-fluid mt-5 mb-3">
-        <p>&copy; 2024 - Prof Anderson Vanin</p>
-     </footer>
-    
+
+        <!-- Região Norte -->
+        <section id="norte" class="mt-5">
+            <h2 class="text-center">Camisas do Norte</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Remo01.png" class="card-img-top" alt="Remo">
+                        <div class="card-body">
+                            <h5 class="card-title">Remo</h5>
+                            <p class="card-text">Camisa do Remo.</p>
+                            <p class="card-price">Preço: R$ 124,90</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Brasiliense01.png" class="card-img-top" alt="Brasiliense">
+                        <div class="card-body">
+                            <h5 class="card-title">Brasiliense</h5>
+                            <p class="card-text">Camisa do Brasiliense.</p>
+                            <p class="card-price">Preço: R$ 126,90</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Região Sul -->
+        <section id="sul" class="mt-5">
+            <h2 class="text-center">Camisas do Sul</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Gremio01.png" class="card-img-top" alt="Grêmio">
+                        <div class="card-body">
+                            <h5 class="card-title">Grêmio</h5>
+                            <p class="card-text">Camisa do Grêmio.</p>
+                            <p class="card-price">Preço: R$ 150,90</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Internacional01.png" class="card-img-top" alt="Internacional">
+                        <div class="card-body">
+                            <h5 class="card-title">Internacional</h5>
+                            <p class="card-text">Camisa do Internacional.</p>
+                            <p class="card-price">Preço: R$ 145,90</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Região Centro-Oeste -->
+        <section id="centro-oeste" class="mt-5">
+            <h2 class="text-center">Camisas do Centro-Oeste</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Goias01.png" class="card-img-top" alt="Goiás">
+                        <div class="card-body">
+                            <h5 class="card-title">Goiás</h5>
+                            <p class="card-text">Camisa do Goiás.</p>
+                            <p class="card-price">Preço: R$ 138,90</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Cuiaba01.png" class="card-img-top" alt="Cuiabá">
+                        <div class="card-body">
+                            <h5 class="card-title">Cuiabá</h5>
+                            <p class="card-text">Camisa do Cuiabá.</p>
+                            <p class="card-price">Preço: R$ 135,90</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-5 py-4">
+            <p>&copy; 2024 Loja de Camisas. Todos os direitos reservados.</p>
+        </footer>
+    </main>
 
     <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/bootstrap.js"></script>
 </body>
 </html>
