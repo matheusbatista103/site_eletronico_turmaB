@@ -24,6 +24,11 @@
             flex-direction: column;
             height: 100%;
         }
+
+        .card-body {
+            padding: 20px;
+        }
+
         .card:hover {
             transform: scale(1.05);
         }
@@ -32,6 +37,10 @@
             width: 100%;
             height: 250px;
             object-fit: contain;
+        }
+        h4 {
+            text-decoration-line: underline;
+            text-align: center;
         }
     </style>
 </head>
@@ -46,24 +55,28 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sudeste">Sudeste</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#nordeste">Nordeste</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sul">Sul</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#centro-oeste">Centro-Oeste</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#norte">Norte</a>
-                    </li>
+                    <li class="dropdown-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Regiões
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a class="nav-link" href="#sudeste">Sudeste</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link" href="#nordeste">Nordeste</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link" href="#sul">Sul</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link" href="#centro-oeste">Centro-Oeste</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link" href="#norte">Norte</a>
+                            </li>
+                        </ul>
+                      </li>
                 </ul>
             </div>
         </div>
@@ -72,6 +85,29 @@
     <header class="container mt-5">
         <h1 class="text-center">Loja de Camisas</h1>
     </header>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/full-bannerr.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/full-banner02.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/full-banner03.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h4>Todos banners e camisas são de sites não autorizados. E não serão divulgados.</h4>
 
     <main class="container mt-5">
         <!-- Região Sudeste -->
@@ -247,5 +283,6 @@
     </main>
 
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="css/bootstrap.css"></script>
 </body>
 </html>
